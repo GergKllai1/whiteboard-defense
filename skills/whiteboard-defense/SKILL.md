@@ -11,7 +11,7 @@ A fresh skeptic subagent attacks the target. You, the main agent, defend each at
 
 `/whiteboard-defense [target] [--rounds N] [--model M]`
 
-- **target**: a spec or plan file path; or a feature named by branch or words, in which case the target is `git diff main...HEAD` plus the files it touches. No target → the newest file in `docs/superpowers/specs/`.
+- **target**: a spec or plan file path; or a feature named by branch or words, in which case the target is `git diff main...HEAD` plus the files it touches. Any spec or plan format works: markdown, a design doc, an ADR, an issue body pasted in chat. No target → ask the user which spec, plan or feature to defend.
 - **--rounds**: round cap, default 2. A round is one skeptic message: round 1 is the attacks, round 2 its ruling on your verdicts. `--rounds 1` skips the ruling.
 - **--model**: the skeptic's model, default `opus`. Opus finds the same defects as the top tier at a fraction of the price; raise it only for a design you distrust.
 

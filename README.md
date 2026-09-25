@@ -37,17 +37,18 @@ attack, its verdict, and the argument you can repeat at a whiteboard yourself.
 ## Use
 
 ```
-/whiteboard-defense docs/superpowers/specs/2026-09-24-my-feature-design.md
-/whiteboard-defense docs/superpowers/plans/2026-09-24-my-feature.md --rounds 3
+/whiteboard-defense docs/design/rate-limiting.md
+/whiteboard-defense docs/plans/rate-limiting.md --rounds 3
 /whiteboard-defense the rate limiting feature on this branch --model fable
 ```
 
-With no target it takes the newest file in `docs/superpowers/specs/`. `--rounds` sets the round cap
+The target is any spec or plan file, in whatever format you write them, or a feature named by branch or
+words. With no target it asks which one to defend. `--rounds` sets the round cap
 (default 2). `--model` sets the skeptic's model, default `opus`: it finds the same defects as the top tier at a fraction of the price. The cost of a run is dominated by the files the two agents read, not by rounds; when the session runs on Fable the skill says so up front, since the defending side inherits that model.
 
-It fits naturally at two points of a [superpowers](https://github.com/obra/superpowers) workflow:
-after brainstorming approves a spec and before the implementation plan is written, and after
-implementation before the branch is finished. It is never automatic.
+It fits at two points of any workflow: after a spec is approved and before the implementation plan is
+written, and after implementation before the branch is merged. It works alongside
+[superpowers](https://github.com/obra/superpowers) but does not depend on it. It is never automatic.
 
 ## License
 
