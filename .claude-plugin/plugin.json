@@ -1,0 +1,11 @@
+{
+  "name": "whiteboard-defense",
+  "displayName": "Whiteboard Defense",
+  "version": "0.1.0",
+  "description": "Adversarial defense of a design spec, plan or shipped feature: a fresh skeptic subagent pokes holes, the main agent defends or concedes, you get the report.",
+  "author": { "name": "Gergo Kallai", "email": "gergo@viametrics.com" },
+  "homepage": "https://github.com/GergKllai1/whiteboard-defense",
+  "repository": "https://github.com/GergKllai1/whiteboard-defense",
+  "license": "MIT",
+  "keywords": ["design-review", "adversarial", "spec", "architecture", "whiteboard-defense"]
+}

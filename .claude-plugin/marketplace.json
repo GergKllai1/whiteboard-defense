@@ -1,0 +1,12 @@
+{
+  "name": "whiteboard-defense",
+  "owner": { "name": "Gergo Kallai", "email": "gergo@viametrics.com" },
+  "description": "Whiteboard defense: adversarial review of specs, plans and shipped features.",
+  "plugins": [
+    {
+      "name": "whiteboard-defense",
+      "source": "./",
+      "description": "A skeptic subagent pokes holes in a spec or feature; the main agent defends or concedes; you get the verdicts."
+    }
+  ]
+}
