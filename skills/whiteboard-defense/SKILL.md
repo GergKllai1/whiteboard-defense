@@ -13,9 +13,9 @@ A fresh skeptic subagent attacks the target. You, the main agent, defend each at
 
 - **target**: a spec or plan file path; or a feature named by branch or words, in which case the target is `git diff main...HEAD` plus the files it touches. Any spec or plan format works: markdown, a design doc, an ADR, an issue body pasted in chat. No target → ask the user which spec, plan or feature to defend.
 - **--rounds**: round cap, default 2. A round is one skeptic message: round 1 is the attacks, round 2 its ruling on your verdicts. `--rounds 1` skips the ruling.
-- **--model**: the skeptic's model, default `opus`. Opus finds the same defects as the top tier at a fraction of the price; raise it only for a design you distrust.
+- **--model**: the skeptic's model, default `fable`. A defense verifies design decisions and runs sparingly, so it gets the most capable model; pass `opus` to trade depth for price.
 
-Cost is driven by files pulled into context, not by rounds. If your session model is Fable, say so in one line before dispatching: the skeptic runs on Opus, the defense side runs on Fable at about 2.5× the cost, and `/model` before the run is the way to lower it. Then continue.
+Cost is driven by files pulled into context, not by rounds.
 
 ## Round 1: dispatch the skeptic
 

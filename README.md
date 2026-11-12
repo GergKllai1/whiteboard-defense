@@ -39,12 +39,12 @@ attack, its verdict, and the argument you can repeat at a whiteboard yourself.
 ```
 /whiteboard-defense docs/design/rate-limiting.md
 /whiteboard-defense docs/plans/rate-limiting.md --rounds 3
-/whiteboard-defense the rate limiting feature on this branch --model fable
+/whiteboard-defense the rate limiting feature on this branch --model opus
 ```
 
 The target is any spec or plan file, in whatever format you write them, or a feature named by branch or
 words. With no target it asks which one to defend. `--rounds` sets the round cap
-(default 2). `--model` sets the skeptic's model, default `opus`: it finds the same defects as the top tier at a fraction of the price. The cost of a run is dominated by the files the two agents read, not by rounds; when the session runs on Fable the skill says so up front, since the defending side inherits that model.
+(default 2). `--model` sets the skeptic's model, default `fable`: a defense verifies design decisions and should be run sparingly, so it gets the most horsepower; pass `opus` for a cheaper run. The cost of a run is dominated by the files the two agents read, not by rounds.
 
 It fits at two points of any workflow: after a spec is approved and before the implementation plan is
 written, and after implementation before the branch is merged. It works alongside
