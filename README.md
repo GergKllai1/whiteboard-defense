@@ -25,7 +25,12 @@ attack, its verdict, and the argument you can repeat at a whiteboard yourself.
 - **Bounded.** The exchange stops when the skeptic has nothing left or after the round cap
   (default 2, `--rounds N`; a round is one skeptic message: the attacks, then its ruling on the verdicts).
 - **You decide.** Conceded points become proposed spec edits or, for code, proposed follow-ups.
-  Nothing is edited until you approve, and nothing is committed.
+  After the report you accept all conceded points and walk through the open ones, or walk
+  through every point; each is one question with a recommended option and an **Elaborate**
+  option that explains the point in detail before you choose. The skeptic picks its own option
+  for each open point: when both agree the recommendation says so, when they diverge you see
+  both and can send the point back to the skeptic once to settle it. Nothing is edited until you
+  approve, and nothing is committed.
 
 ## Install
 
